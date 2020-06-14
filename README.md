@@ -10,7 +10,7 @@ $ npm i prettier tslint-config-prettier tslint-plugin-prettier stylelint-config-
 
 `.stylelintrc`
 
-### Поместить в него следующий код
+- Поместить в него следующий код
 
 ```javascript
 {
@@ -57,7 +57,7 @@ $ npm i prettier tslint-config-prettier tslint-plugin-prettier stylelint-config-
 $ npx tslint-config-prettier-check ./tslint.json
 ```
 
-### Удалить конфликтующие правила из файла `tslint.json` теперь их будет контроллировать `prettier`
+- Удалить конфликтующие правила из файла `tslint.json` теперь их будет контроллировать `prettier`
 
 ### Проверяем правильность подключения правил `stylelint`
 
@@ -69,7 +69,7 @@ $ npx stylelint-config-prettier-check
 
 `.huskyrc`
 
-### Поместить в него следующий код
+- Поместить в него следующий код
 
 ```javascript
 {
@@ -83,7 +83,7 @@ $ npx stylelint-config-prettier-check
 
 `.lintstagedrc`
 
-### Поместить в него следующий код
+- Поместить в него следующий код
 
 ```javascript
 {
