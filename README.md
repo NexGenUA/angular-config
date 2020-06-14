@@ -22,7 +22,7 @@ $ npm i prettier tslint-config-prettier tslint-plugin-prettier stylelint-config-
 }
 ```
 
-### Добавить в `package.json` 2 команды в поле `scripts`
+Добавить в `package.json` 2 команды в поле `scripts`
 
 
 ```javascript
@@ -34,7 +34,7 @@ $ npm i prettier tslint-config-prettier tslint-plugin-prettier stylelint-config-
 }
 ```
 
-### Отредактировать файл `tslint.json`, изменить содержимое поля `"extends"` и в поле `"rules"` добавить строку `"prettier": true`
+Отредактировать файл `tslint.json`, изменить содержимое поля `"extends"` и в поле `"rules"` добавить строку `"prettier": true`
 
 
 ```javascript
@@ -51,7 +51,7 @@ $ npm i prettier tslint-config-prettier tslint-plugin-prettier stylelint-config-
 }
 ```
 
-### Для проверки конфликтов prettier и tslint запустить следующую команду
+**Для проверки конфликтов prettier и tslint запустить следующую команду**
 
 ```javascript
 $ npx tslint-config-prettier-check ./tslint.json
@@ -59,7 +59,7 @@ $ npx tslint-config-prettier-check ./tslint.json
 
 - Удалить конфликтующие правила из файла `tslint.json` теперь их будет контроллировать `prettier`
 
-### Проверяем правильность подключения правил `stylelint`
+**Проверяем правильность подключения правил `stylelint`**
 
 ```javascript
 $ npx stylelint-config-prettier-check
@@ -96,19 +96,19 @@ $ npx stylelint-config-prettier-check
 }
 ```
 
-### Запустить один раз команду, что бы привести к одному кодстайлу все файлы, которые еще не изменялись
+Запустить один раз команду, что бы привести к одному кодстайлу все файлы, которые еще не изменялись
 
 ```javascript
 $ npm run prettier
 ```
 
-### Попробовать сделать коммит, должна запуститься проверка, если проверка пройдена - коммит добавляется
+Попробовать сделать коммит, должна запуститься проверка, если проверка пройдена - коммит добавляется
 
 ```javascript
 $ git add .
 $ git commit -m "test"
 ```
 
-### Так же можно настроить свой IDE, что бы он подсвечивал ошибки во время написания кода, тем самым экономя время на исправление ошибок
+Так же можно настроить свой IDE, что бы он подсвечивал ошибки во время написания кода, тем самым экономя время на исправление ошибок
 
-### Готовые файлы `.stylelintrc` `.huskyrc` `.lintstagedrc` и отредактированный `tslint.json` можно скачать из дирректории [files](https://github.com/NexGenUA/angular-config/tree/master/files)
+Готовые файлы `.stylelintrc` `.huskyrc` `.lintstagedrc` и отредактированный `tslint.json` можно скачать из дирректории [files](https://github.com/NexGenUA/angular-config/tree/master/files)
