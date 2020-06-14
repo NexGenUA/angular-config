@@ -1,14 +1,16 @@
-- Установить необходимые пакеты
+### Установить необходимые пакеты
 
 ```javascript
-$ npm i stylelint stylelint-config-airbnb stylelint-scss stylelint-order husky lint-staged prettier tslint-config-prettier tslint-plugin-prettier stylelint-config-prettier stylelint-prettier -D
+$ npm i stylelint stylelint-config-airbnb stylelint-scss stylelint-order -D
+$ npm i husky lint-staged -D
+$ npm i prettier tslint-config-prettier tslint-plugin-prettier stylelint-config-prettier stylelint-prettier -D
 ```
 
-- Создать файл
+### Создать файл
 
 `.stylelintrc`
 
-- Поместить в него следующий код
+### Поместить в него следующий код
 
 ```javascript
 {
@@ -20,7 +22,7 @@ $ npm i stylelint stylelint-config-airbnb stylelint-scss stylelint-order husky l
 }
 ```
 
-- Добавить в `package.json` 2 команды в поле `scripts`
+### Добавить в `package.json` 2 команды в поле `scripts`
 
 
 ```javascript
@@ -32,7 +34,7 @@ $ npm i stylelint stylelint-config-airbnb stylelint-scss stylelint-order husky l
 }
 ```
 
-- Отредактировать файл `tslint.json`, изменить содержимое поля `"extends"` и в поле `"rules"` добавить строку `"prettier": true`
+### Отредактировать файл `tslint.json`, изменить содержимое поля `"extends"` и в поле `"rules"` добавить строку `"prettier": true`
 
 
 ```javascript
@@ -49,25 +51,25 @@ $ npm i stylelint stylelint-config-airbnb stylelint-scss stylelint-order husky l
 }
 ```
 
-- Для проверки конфликтов prettier и tslint запустить следующую команду
+### Для проверки конфликтов prettier и tslint запустить следующую команду
 
 ```javascript
 $ npx tslint-config-prettier-check ./tslint.json
 ```
 
-- Удалить конфликтующие правила из файла `tslint.json` теперь их будет контроллировать `prettier`
+### Удалить конфликтующие правила из файла `tslint.json` теперь их будет контроллировать `prettier`
 
-- Проверяем правильность подключения правил `stylelint`
+### Проверяем правильность подключения правил `stylelint`
 
 ```javascript
 $ npx stylelint-config-prettier-check
 ```
 
-- Создаем файл
+### Создаем файл
 
 `.huskyrc`
 
-- Поместить в него следующий код
+### Поместить в него следующий код
 
 ```javascript
 {
@@ -77,11 +79,11 @@ $ npx stylelint-config-prettier-check
 }
 ```
 
-- Создаем файл
+### Создаем файл
 
 `.lintstagedrc`
 
-- Поместить в него следующий код
+### Поместить в него следующий код
 
 ```javascript
 {
@@ -94,19 +96,19 @@ $ npx stylelint-config-prettier-check
 }
 ```
 
-- Запустить один раз команду, что бы привести к одному кодстайлу все файлы, которые еще не изменялись
+### Запустить один раз команду, что бы привести к одному кодстайлу все файлы, которые еще не изменялись
 
 ```javascript
 $ npm run prettier
 ```
 
-- Попробовать сделать коммит, должна запуститься проверка, если проверка пройдена - коммит добавляется
+### Попробовать сделать коммит, должна запуститься проверка, если проверка пройдена - коммит добавляется
 
 ```javascript
 $ git add .
 $ git commit -m "test"
 ```
 
-- Так же можно настроить свой IDE, что бы он подсвечивал ошибки во время написания кода, тем самым экономя время на исправление ошибок
+### Так же можно настроить свой IDE, что бы он подсвечивал ошибки во время написания кода, тем самым экономя время на исправление ошибок
 
-- Готовые файлы `.stylelintrc` `.huskyrc` `.lintstagedrc` и отредактированный `tslint.json` можно скачать из дирректории files
+### Готовые файлы `.stylelintrc` `.huskyrc` `.lintstagedrc` и отредактированный `tslint.json` можно скачать из дирректории [files](https://github.com/NexGenUA/angular-config/tree/master/files)
