@@ -106,7 +106,7 @@ $ npm run prettier
 
 ```javascript
 $ git add .
-$ git commit -m "test"
+$ git commit -m "feat: add prettier and bringing to a single style"
 ```
 
 Так же можно настроить свой IDE, что бы он подсвечивал ошибки во время написания кода, тем самым экономя время на исправление ошибок
