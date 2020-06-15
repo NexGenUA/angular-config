@@ -2,7 +2,7 @@
 
 ```javascript
 $ npm i stylelint stylelint-config-airbnb stylelint-scss stylelint-order -D
-$ npm i husky lint-staged -D
+$ npm i husky lint-staged git-branch-is -D
 $ npm i prettier tslint-config-prettier tslint-plugin-prettier stylelint-config-prettier stylelint-prettier -D
 ```
 
@@ -74,7 +74,7 @@ $ npx stylelint-config-prettier-check
 ```javascript
 {
   "hooks": {
-     "pre-commit": "lint-staged && npm run lint"
+     "pre-commit": "git-branch-is -r \"\\b(?:(?!master)\\w)+\\b\" && lint-staged && npm run lint"
   }
 }
 ```
